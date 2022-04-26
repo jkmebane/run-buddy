@@ -27,7 +27,7 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    
+
 }
 
 header a {
@@ -39,31 +39,36 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline;
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.5vw;
 }
 
 footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h2 {
-    display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 
 footer div {
-    float: right;
     line-height: 1.5;
     text-align: right;
 }
@@ -133,7 +138,9 @@ section {
 .intro {
     text-align: center;
 
-}.intro h2 {
+}
+
+.intro h2 {
     font-size: 55px;
     color: #024e76;
     margin-bottom: 35px;
@@ -152,8 +159,8 @@ section {
     width: 80%;
     font-size: 20px;
 
-     /* add this along your other declarations */
-     margin: 0 auto;
+    /* add this along your other declarations */
+    margin: 0 auto;
 }
 
 .steps {
@@ -188,14 +195,10 @@ section {
 }
 
 /* remove this entire CSS rule */
-.intro h2 {
-
-}
+.intro h2 {}
 
 /* and this one */
-.steps h2 {
-
-}
+.steps h2 {}
 
 .steps div {
     margin-bottom: 80-px;
@@ -222,7 +225,9 @@ section {
 .steps span {
     font-size: 38px;
 
-}.trainers {
+}
+
+.trainers {
     text-align: center;
 }
 
@@ -275,7 +280,7 @@ section {
     display: inline-block;
     padding: 0 100px 20px 100px;
     border-bottom: 3px solid;
-    margin-bottom:  35px;
+    margin-bottom: 35px;
     color: #024e76;
 }
 
@@ -311,7 +316,8 @@ section {
 
 }
 
-.contact-info p, .contact-info address {
+.contact-info p,
+.contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 20px;
